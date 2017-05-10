@@ -6,7 +6,7 @@
 Version control is a built-in system that records the changes made to certain files by creating different versions. This allows programmers to work on the same program all at once while merging different features or software updates into the 'master' branch and jumping back to previous versions if there is a problem.
 
 * What is a branch and why would you use one?
-A branch is a copy or duplication of the master file allowing developers to work parallel to the master file.
+A branch is a copy or duplication of the master file allowing developers to work parallel to the master file. Can be a lifesaver in the case of some sort of bug in the system because you can easily track when that bug came into play and how to go about fixing it.
 
 * What is a commit? What makes a good commit message?
 A commit is basically "committing" the changes you have made to a file to the actual project history. It follows the git add command which stages the changes for commitment. A good commit message is one that describes the changes and updates that have been made to the committed file so that other programmers can understand what has happened
