@@ -2,7 +2,7 @@ def hamster
   puts "What is the hamsters name"
   hamster_name = gets.chomp!
   puts "How loud is the hamster on a scale of 1 to 10"
-  volume = gets.chomp!
+  volume = gets.to_i
   puts " What is the color of the fur"
   fur_color = gets.chomp!
   puts "#{hamster_name} " + "is the name of the hamster"
