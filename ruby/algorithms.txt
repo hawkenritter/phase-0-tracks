@@ -1,0 +1,27 @@
+Elevator Robot:
+1. Enter elevator.
+2. Navigate to the control panel.
+3. Move arm to upper left button labeled "2".
+4. Ask human if the name of the floor under robot finger is the correct one.
+5. If response is yes, click button.
+6. If response is no, move robot finger one button down.
+7. Repeat until response equals yes.
+
+Day to Day Algorithm Pseudocode: Robot brewing coffee
+1. Initiate process at 6:30am
+2. Open lid to ground coffee beans.
+3. Place one coffee filter in coffee machine
+4. Lift coffee container over filter
+5. Pour grounds for 12 seconds
+6. Place coffee ground container back on counter
+7. Put cap on grounds container
+8. Lift coffee pot idle position
+9. Move to sink, 3 feet to the right.
+10. Turn sink on
+11. Fill up pot for 30 seconds
+12. Return 3ft back to coffee machine.
+13. Open back lid, dump water in cavity
+14. Close lid and return pot to previous idle position
+15. Flick button on.
+16. Repeat Daily (6:30am)
+
