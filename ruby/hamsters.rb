@@ -18,5 +18,16 @@ def hamster_organizer
   if estimated_age == ""
     puts estimated_age = nil
   end
+  puts "The hamster name is " + "#{hamster_name}"
+  puts "The hamster is a " + "#{volume}" + "on a scale of 1 to 10"
+  puts "The hamster is " + "#{fur_color}"
+  if adoption_status == "y"
+    puts "It is a good candidate for adoption"
+  elsif
+    puts "It is NOT a good candidate for adoption"
+  end
+  puts "We think the hamster is " +"#{estimated_age}" + "years old"
 end
+
+hamster_organizer
 
