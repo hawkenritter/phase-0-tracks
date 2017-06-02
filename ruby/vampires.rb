@@ -29,9 +29,9 @@ def vampire_test
 
   if age_check != stated_age && insurance == "n" && garlic_bread == "n"
      puts "Probably a vampire"
-  elsif age_check == stated_age && garlic_bread == "y"|| age_check ==stated_age && insurance == "y"
+  elsif age_check == stated_age && (garlic_bread == "y"|| insurance == "y")
      puts "Probably not a vampire"
-  elsif age_check != stated_age && insurance == "n" && garlic_bread == "n" && insurance == "n"
+  elsif age_check != stated_age && (insurance == "n" && garlic_bread == "n")
     puts "Almost certainly a vampire"
   elsif hire_name == "Drake Cula" || hire_name == "Tu Fang"
     puts "“Definitely a vampire"
@@ -55,15 +55,5 @@ end
  # puts "He says he is " + "#{stated_age}"
  # puts "And he says he was born in " + "#{birth_year}"
  # end
-hire_name = "Drake Cula"
 
-  if age_check != stated_age && insurance == "n" && garlic_bread == "n"
-     puts "Probably a vampire"
-  elsif age_check == stated_age && garlic_bread == "y"|| insurance == "n"
-     puts "Probably not a vampire"
-  elsif age_check != stated_age && insurance == "n" && garlic_bread == "n" && insurance == "n"
-    puts "Almost certainly a vampire"
-  elsif hire_name == "Drake Cula" || hire_name == "Tu Fang"
-    puts "“Definitely a vampire"
-  end
 
