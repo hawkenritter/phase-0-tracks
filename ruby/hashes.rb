@@ -29,29 +29,37 @@ input = gets.chomp
 #this code doesn't scale because what if I add an item to the hash?
 
   if input.downcase == "yes"
-    puts "Please specify which category:(name, children, decor, bedrooms)"
-    category_update = gets.chomp
-    if category_update == "name"
-      puts "What is the updated name?"
-      new_name = gets.chomp
-      interior_client_list[:client_name] = "#{new_name}"
-
-    elsif category_update == "children"
-      puts "How many children do you have?"
-      children_revised = gets.to_i
-      interior_client_list[:children_in_house] = "#{children_revised}"
-    elsif category_update == "decor"
-      puts "What theme would you like?"
-      updated_decor = gets.chomp
-      interior_client_list[:decor_theme] = "#{updated_decor}"
-    else category_update == "bedrooms_in_house"
-      puts "How many bedrooms do you have?"
-      updated_bedroom_count = gets.to_i
-      interior_client_list[:bedrooms_in_house] = "#{updated_bedroom_count}"
-    end
-
-  else
-    puts "Okay great!"
+    puts "Please specify which category, or specify a new category:(client_name, children_in_house, decor_theme, bedrooms_in_house)"
+    category_update = gets.chomp.to_sym
+    puts "what would you like to update in #{category_update}"
+    interior_client_list[category_update] = gets.chomp
+    #edge cases?
   end
 
+
+#  if category_update == "name"
+#      puts "What is the updated name?"
+#      new_name = gets.chomp
+#      interior_client_list[:client_name] = new_name#
+
+#    elsif category_update == "children"
+#      puts "How many children do you have?"
+#      children_revised = gets.to_i
+#      interior_client_list[:children_in_house] = "#{children_revised}"
+#    elsif category_update == "decor"
+#      puts "What theme would you like?"
+#      updated_decor = gets.chomp
+#      interior_client_list[:decor_theme] = "#{updated_decor}"
+#    else category_update == "bedrooms_in_house"
+#      puts "How many bedrooms do you have?"
+#      updated_bedroom_count = gets.to_i
+#      interior_client_list[:bedrooms_in_house] = updated_bedroom_count
+#    end#
+
+#  else
+#    puts "Okay great!"
+#  end
+
 p interior_client_list
+
+#create loop
