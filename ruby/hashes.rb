@@ -17,7 +17,7 @@ interior_client_list[:client_name] = "#{the_clients_name}"
 interior_client_list[:children_in_house] = "#{number_of_children}"
 interior_client_list[:decor_theme] = "#{decor_theme_stated}"
 interior_client_list[:bedrooms_in_house] = "#{house_size}"
-
+#do these need to be => ???
 p interior_client_list[:client_name]
 p interior_client_list
 
@@ -35,6 +35,7 @@ input = gets.chomp
       puts "What is the updated name?"
       new_name = gets.chomp
       interior_client_list[:client_name] = "#{new_name}"
+
     elsif category_update == "children"
       puts "How many children do you have?"
       children_revised = gets.to_i
