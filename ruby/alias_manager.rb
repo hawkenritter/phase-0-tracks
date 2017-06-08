@@ -38,7 +38,7 @@ while true
     ## figure this part out, putting new string into array, it keeps replacing the existing object
     list_on_names = []
 
-    list_on_names.push(new_array.join) #add string to the list of names
+    list_on_names.push("#{new_array.join}") #add string to the list of names
     p list_on_names #print list of names
   end
   #alias_name_array = ""
