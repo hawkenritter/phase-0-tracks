@@ -15,7 +15,7 @@
 #end
 
 #Task 2
-
+list_on_names = []
 while true
   puts "What is your name agent? ('exit' if finished)"
   agent_name = gets.chomp.downcase
@@ -36,15 +36,21 @@ while true
       end
     end
     ## figure this part out, putting new string into array, it keeps replacing the existing object
-    list_on_names = []
 
-    list_on_names.push("#{new_array.join}") #add string to the list of names
+
+    list_on_names << new_array.join #add string to the list of names
     p list_on_names #print list of names
   end
-  #alias_name_array = ""
-#  alias_name_array << new_array.join
-#  p alias_name_array
+
 end
+
+
+
+
+
+
+
+
 #p alias_name_array
 #####
 #alias_name_array = []
@@ -55,3 +61,6 @@ end
 #list_on_names = list_on_names.to_s #convert the array so that it holds strings
    # joined_array = new_array.join #convert array of letters into a single string
 
+#alias_name_array = ""
+#  alias_name_array << new_array.join
+#  p alias_name_array

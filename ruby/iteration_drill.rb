@@ -5,7 +5,9 @@ zombie_apocalypse_supplies = ["hatchet", "rations", "water jug", "binoculars",
 
 # 1. Iterate through the zombie_apocalypse_supplies array,
 # printing each item in the array separated by an asterisk
-# ----
+zombie_apocalypse_supplies.each do |word|
+  p zombie_apocalypse_supplies.join("*")
+end
 
 # 2. In order to keep yourself organized, sort your zombie_apocalypse_supplies
 # in alphabetical order. Do not use any special built-in methods.

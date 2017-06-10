@@ -1,4 +1,4 @@
-#An encrypt method that advances every letter of a string one letter forward. So "abc" would become "bcd". For now, you can assume lowercase input and output. Any space character should remain a space character -- no change made
+s#An encrypt method that advances every letter of a string one letter forward. So "abc" would become "bcd". For now, you can assume lowercase input and output. Any space character should remain a space character -- no change made
 def encrypt(string) #encrypt method takes in a parameter that we want to alter
   index = 0 #The encryption will begin on the first letter i.e. index position 0
   estring = "" #this is the encrypted string, since the loop hasn't started it is empty
