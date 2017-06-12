@@ -12,3 +12,12 @@
 #Swim
 #Sleep
 #Eat
+
+class Puppy
+
+def initialize
+  def fetch(toy)
+    puts "I brought back the #{toy}"
+    toy
+  end
+end
