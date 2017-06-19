@@ -13,7 +13,7 @@ end
 @possible_genders = ["agender", "female", "bigender", "male", "female", "gender fluid", "N/A"]
 @possible_ethnicities =  ["white", "Japanese-African", "prefer not to say", "Mystical Creature (unicorn)", "N/A"]
 
-50.times do |i|
+5.times do |i|
 i = Santa.new(@possible_genders.sample, @possible_ethnicities.sample, rand(140))
 p i
 end
