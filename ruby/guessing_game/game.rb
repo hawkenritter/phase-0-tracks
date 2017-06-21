@@ -10,38 +10,35 @@ class GuessingGame
 
   def initialize(secret_word)
     @secret_word = secret_word
-    @secret_array = secret_word.split(',')
-    @guess_count = 0
+    @secret_array = secret_word.split(//) # ""
+    @guess_count = (@secret_array.length)
     @is_over = false
     @guessed_array = Array.new(secret_word.length, "_")
     @already_guessed = []
   end
 
-    #show the secret count to the user, they have this many guesses left
 
-    #  def guesses_left
-    #    p secret_word.length * 2
-    #  end
-    #show the remaining letters that still need to be guessed based on length of word
 
   def check_letter(guessed_letter)
-    @guess_count = 0
     @already_guessed << guessed_letter
-    while @guess_count < secret_word.length
-      if secret_array.include? guessed_letter
-       @secret_array.each do |i|
-          if @secret_array[i] == guessed_letter
-            @guessed_array[i] == guessed_letter
+    if @guess_count == 0 # == (secret_word.length * 2)
+      puts "Ha! you lose"
+    elsif @secret_array == @guessed_array
+        puts "You win!"
+    else
+      #if @secret_array.include? guessed_letter
+        @secret_array.each_with_index do |letter, index|
+
+          if letter == guessed_letter #each with index
+            @guessed_array[index] = guessed_letter
           end
         end
-      else
-        @guess_count += 1
-      end
-      if @secret_array == @guessed_array
-        puts "You win!"
-      end
+        @guess_count -= 1
+
     end
+    p "You have #{@guess_count} guesses remaining"
     @guessed_array.join(" ")
+
   end
 
   def letters_remaining
@@ -51,8 +48,17 @@ class GuessingGame
 
 end
 
+
+
+
 game = GuessingGame.new("apple")
 p game.letters_remaining
+game.check_letter("e")
+game.check_letter("f")
+game.check_letter("l")
+game.check_letter("e")
 game.check_letter("a")
+
+
 p game.letters_remaining
 
