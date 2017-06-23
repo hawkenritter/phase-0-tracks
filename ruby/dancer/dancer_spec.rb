@@ -1,3 +1,4 @@
+require_relative 'dance_league'
 describe Dancer do
   let(:dancer) { Dancer.new("Misty Copeland", 33) }
 
