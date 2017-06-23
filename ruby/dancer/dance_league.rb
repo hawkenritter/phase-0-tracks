@@ -3,7 +3,8 @@ class Dancer
   attr_reader :name
   attr_accessor :age
   attr_accessor :tutu_color
-
+  attr_accessor :card
+  attr_accessor :remove_dancer
   def initialize(name, age, tutu_color)
     @name = name
     @age = age
@@ -29,7 +30,9 @@ class Dancer
   #end
 
   def begin_next_dance
-    "Now dancing with #{@card.shift}."
+    return "Now dancing with #{@card[0].delete}."
+    #remove_dancer
+    @card
   end
 
   def change_color(new_color)
@@ -40,13 +43,14 @@ end
 
 ##### Hi Glenna, This worked when I ran it manually, but I couldn't figure out why the remove dancer wasn't working in my test file...?
 
-#dancer = Dancer.new("Misty Copeland", 33, "pink")
-#dancer.queue_dance_with("hawk")
-#dancer.queue_dance_with("joe")
-#dancer.queue_dance_with("flow")
-#p dancer.card
-#p dancer.begin_next_dance
-#p dancer.card
+dancer = Dancer.new("Misty Copeland", 33, "pink")
+dancer.queue_dance_with("hawk")
+dancer.queue_dance_with("joe")
+dancer.queue_dance_with("flow")
+p dancer.card
+p dancer.begin_next_dance
+dancer.remove_dancer
+p dancer.card
 
 
 

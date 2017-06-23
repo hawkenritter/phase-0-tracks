@@ -5,23 +5,49 @@ zombie_apocalypse_supplies = ["hatchet", "rations", "water jug", "binoculars",
 
 # 1. Iterate through the zombie_apocalypse_supplies array,
 # printing each item in the array separated by an asterisk
-zombie_apocalypse_supplies.each do |word|
-  p zombie_apocalypse_supplies.join("*")
+#zombie_apocalypse_supplies.each do |word|
+ # p zombie_apocalypse_supplies.join("*")
+#end
+def method
+p zombie_apocalypse_supplies.join("*")
 end
 
 # 2. In order to keep yourself organized, sort your zombie_apocalypse_supplies
 # in alphabetical order. Do not use any special built-in methods.
 # ----
 
+
 # 3. Create a method to see if a particular item (string) is in the
 # zombie_apocalypse_supplies. Do not use any special built-in methods.
 # For instance: are boots in your list of supplies?
 # ----
-
+#def check_supplies(input)
+#  zombie_apocalypse_supplies = ["hatchet", "rations", "water jug", "binoculars","shotgun","compass", "CB radio", "batteries"]
+#  zombie_apocalypse_supplies.each do |i|
+#    if i == input
+#      puts "Yes, #{input} is in the array"
+#    else
+#      puts "No, #{input} is NOT in the array"
+#      break
+#      end
+#    end
+#end
+#check_supplies("zebra")
 # 4. You can't carry too many things, you've only got room in your pack for 5.
 # Remove items in your zombie_apocalypse_supplies in any way you'd like,
 # leaving only 5. Do not use any special built-in methods.
 # ----
+#def remove_items
+#  zombie_apocalypse_supplies = ["hatchet", "rations", "water jug", "binoculars","shotgun","compass", "CB radio", "batteries"]
+#  n = zombie_apocalypse_supplies.length
+#  until n == 5
+#    zombie_apocalypse_supplies.map do |i|
+#    zombie_apocalypse_supplies.delete(i)
+#  end
+#end
+#  p zombie_apocalypse_supplies
+#end
+#remove_items
 
 # 5. You found another survivor! This means you can combine your supplies.
 # Create a new combined supplies list out of your zombie_apocalypse_supplies
@@ -30,7 +56,8 @@ end
 # documentation for Arrays.
 other_survivor_supplies = [ "warm clothes", "rations", "compass", "camp stove",
                             "solar battery", "flashlight"]
-# ----
+zombie_apocalypse_supplies = ["hatchet", "rations", "water jug", "binoculars","shotgun","compass", "CB radio", "batteries"]
+
 
 # Hash Drills
 
