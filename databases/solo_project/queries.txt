@@ -1,0 +1,32 @@
+1. Display the information in one table (either table is fine).
+    Command: select * from airplane_seats
+    Output: 1|First Class
+            2|Business Class
+            3|Coach
+
+2. Update an item that meets some condition (you can choose a condition that makes sense).
+    Command: UPDATE airplane_passengers SET diet_restrictions = "true" WHERE name="Jack Abram";
+    Output: N/A
+
+3. Display the information in both tables using one query.
+
+    Command:SELECT * FROM airplane_passengers, airplane_seats WHERE airplane_passengers.seat_class_id = airplane_seats.id;
+
+    Output: 1|Jack Abram|true|2|2|Business Class
+            2|Cole Rogers|true|1|1|First Class
+            3|Hawken Ritter|true|1|1|First Class
+            4|Clay Wilson|false|3|3|Coach
+
+4. Display a narrower selection of columns (fewer columns than all of them, in other words) from both tables using one query.
+
+    Command: SELECT airplane_passengers.name, airplane_seats.name FROM airplane_passengers JOIN airplane_seats ON airplane_passengers.seat_class_id = airplane_seats.id;
+
+    Output:Jack Abram|Business Class
+                Cole Rogers|First Class
+                Hawken Ritter|First Class
+                Clay Wilson|Coach
+
+5. Delete an item that meets some condition (you can choose a condition that makes sense).
+
+    Command:DELETE FROM airplane_passengers WHERE name="Cole Rogers";
+    Output: N/A
