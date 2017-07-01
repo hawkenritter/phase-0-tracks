@@ -1,0 +1,18 @@
+2. Join three tables:
+      Command:
+              SELECT * FROM reviews JOIN users on reviews.user_id = users.id JOIN businesses   ON reviews.business_id = businesses.id;
+      Output:
+              1|4.2|Food is great, atmosphere nice|2|2|2|Mandy|Kaling|2|Amir's Towing
+              2|2|Not great, wouldn't return|3|3|3|Angela|Jolie|3|The Beagle Nightclub
+3. Choose just user name biz name star rating etc..
+      Command:
+              SELECT users.first_name, users.last_name, businesses.name, reviews.stars, reviews.comment FROM reviews JOIN users ON reviews.user_id = users.id JOIN businesses on reviews.business_id = businesses.id;
+      Output:
+              Mandy|Kaling|Amir's Towing|4.2|Food is great, atmosphere nice
+              Angela|Jolie|The Beagle Nightclub|2|Not great, wouldn't return
+
+4. View data for just one business:
+      Command:
+              SELECT *, business.1 FROM reviews JOIN users ON reviews.user_id = users.id JOIN businesses on reviews.business_id = businesses.id;
+      Output:
+        ??
