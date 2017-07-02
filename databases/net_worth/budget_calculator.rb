@@ -38,8 +38,28 @@ def budget_calc
   discretionary_income = m_income - fixed_costs - savings_goal
   puts "Based on your monthly inputs, we calculate that you have #{discretionary_income} to spend on food and other discretionary items"
 end
-budget_calc
 
+#method for adding an expense to the table
+def new_expense(db)
+  puts "Please enter date of transaction; XXXX-XX-XX (Year, Month, Day)"
+  date = gets.chomp
+  puts "Please label your transaction for later reference"
+  e_name = gets.chomp
+  puts "How much are you withdrawing"
+  amount = gets.chomp
 
+  db.execute("INSERT INTO monthly_expenses(expense_date, expense_name, expense_amount) VALUES ('#{date}','#{e_name}','#{amount}')")#, [expense_date, expense_name, expense_amount])
+end
+
+#new_expense(db)
+
+  puts "Would you like to make a withdrawal or deposit?"
+    if gets.chomp == "withdrawal"
+      new_expense(db)
+    elsif gets.chomp == "deposit"
+      new_deposit
+    else
+      puts "Thank you"
+    end
 
 
