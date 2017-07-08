@@ -48,7 +48,16 @@ end
 
 
 
-
+1|1995-07-01|Purchased a pair of shoes|100.0
+2|1995-07-01|Purchased a pair of shoes|100.0
+3|2017-08-05|Purchased a car|20000.0
+4|1962|Basketball|45.0
+5|1990-10-10|basketball|90.0
+6|1990-10-10|bball|50.0
+7|1995-01-01|notebook|25.0
+8|2017-05-05|Test this label|50.0
+9|2017-12-01|week 1 check|200.0
+10|2017-08-09|testing negative|-500.0
 
 
 #p alias_name_array
