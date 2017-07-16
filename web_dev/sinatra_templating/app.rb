@@ -25,3 +25,17 @@ post '/students' do
 end
 
 # add static resources
+
+get '/campus/new' do
+  erb :campus
+end
+
+post '/campus' do
+  if campuses = false
+  db.execute(CREATE TABLE campuses (
+    City varchar(255)
+    );)
+  else db.execute("INSERT INTO campuses (city) VALUES (?)", [params['city']])
+  end
+redirect '/'
+end
